@@ -10,7 +10,7 @@ const Footer = () => {
     const [open2, setOpen2] = useState(false)
     const [open3, setOpen3] = useState(false)
     return (
-        <div>
+        <div className="md:p-0 pb-12">
             <div className="bg-[#f8fafc] h-40 flex flex-col items-center justify-evenly">
                 <span className="xl:text-3xl text-xl font-bold">Follow Anime Figure on Instagram</span>
                 <span className="font-light">@anime.figure_</span>
@@ -161,12 +161,12 @@ const Footer = () => {
 
                 <div className={`${open?'block':'hidden'} bg-black w-full`}>
                     <div className="flex flex-col justify-center items-center">
-                        <div onClick={() => setOpen1(!open1)} className="text-lg text-white font-bold w-full flex flex-row justify-evenly items-center ">
+                        <div onClick={() => setOpen1(!open1)} className="text-lg text-white font-bold w-full flex flex-row justify-between items-center ">
                             <span>Giới thiệu Anime Figure</span>
                             <FontAwesomeIcon icon={angleDown} className={`${open1 ? 'rotate-180' : 'rotate-0'} transition duration-500 linear`} />
                         </div>
                         <div className={`${open1 ? 'block h-auto' : 'hidden h-0'} w-full transition duration-500 linear`}>
-                            <p className="text-[#f3f4f6] font-light text-sm">
+                            <p className="text-[#f3f4f6] font-light text-center">
                                 Địa chỉ: Quận 10, Tp. Hồ Chí Minh.<br /> Japan Figure chưa có không gian trưng <br /> bày, bạn vui lòng hẹn trước khi đến <br />
                                 Điện thoại: 090 8268 007 <br />
                                 Email: support@animefigure.vn
@@ -175,7 +175,7 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col justify-center items-center">
-                        <div onClick={() => setOpen2(!open2)} className="text-lg text-white font-bold w-full flex flex-row justify-evenly items-center ">
+                        <div onClick={() => setOpen2(!open2)} className="text-lg text-white font-bold w-full flex flex-row justify-between items-center ">
                             <span>Hỗ trợ khách hàng</span>
                             <FontAwesomeIcon icon={angleDown} className={`${open2 ? 'rotate-180' : 'rotate-0'} transition duration-500 linear`} />
                         </div>
@@ -194,7 +194,7 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col justify-center items-center">
-                        <div onClick={() => setOpen3(!open3)} className="text-lg text-white font-bold w-full flex flex-row justify-evenly items-center ">
+                        <div onClick={() => setOpen3(!open3)} className="text-lg text-white font-bold w-full flex flex-row justify-between items-center ">
                             <span>Chăm sóc khách hàng</span>
                             <FontAwesomeIcon icon={angleDown} className={`${open3 ? 'rotate-180' : 'rotate-0'} transition duration-500 linear`} />
                         </div>
